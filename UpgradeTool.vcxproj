@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{53B6CA2B-3FDA-40FA-BE19-44778BC69B71}</ProjectGuid>
+    <RootNamespace>UpgradeTool</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CommunicateMessageShow.h" />
+    <ClInclude Include="Communication\Common\UpgradeCommon.h" />
+    <ClInclude Include="Communication\DataClient.h" />
+    <ClInclude Include="Communication\Network\NetClient.h" />
+    <ClInclude Include="Communication\Network\NetServer.h" />
+    <ClInclude Include="Communication\Network\Network.h" />
+    <ClInclude Include="Communication\Network\OneClient.h" />
+    <ClInclude Include="Communication\Serial\Serial.h" />
+    <ClInclude Include="Communication\STBConnInterface.h" />
+    <ClInclude Include="ConaxPersonalizeDlg.h" />
+    <ClInclude Include="DataManage\CastpalLocalData\PEF.h" />
+    <ClInclude Include="DataManage\CastpalServerData\CastpalServerData.h" />
+    <ClInclude Include="DataManage\CastpalServerData\HDCP.h" />
+    <ClInclude Include="DataManage\CastpalServerData\MAC.h" />
+    <ClInclude Include="DataManage\CastpalServerData\SN.h" />
+    <ClInclude Include="DataManage\ConaxPersonalize\ConaxPersonalize.h" />
+    <ClInclude Include="DataManage\ConaxPersonalize\HttpClient\DebugLog.h" />
+    <ClInclude Include="DataManage\ConaxPersonalize\HttpClient\HttpClient.h" />
+    <ClInclude Include="DataManage\ConaxPersonalize\JobFileManage.h" />
+    <ClInclude Include="DataManage\ConfigData\ConfigData.h" />
+    <ClInclude Include="DataManage\ConfigData\NodeList.h" />
+    <ClInclude Include="DataManage\ConfigData\ParseConfig.h" />
+    <ClInclude Include="DataManage\ConfigData\XMLNode.h" />
+    <ClInclude Include="DataManage\DataManage.h" />
+    <ClInclude Include="DataManage\FactoryDBServerData\DBConn\DBConn.h" />
+    <ClInclude Include="DataManage\FactoryDBServerData\DBConn\DBTableString.h" />
+    <ClInclude Include="DataManage\FactoryDBServerData\DBConn\Table\InsertTable.h" />
+    <ClInclude Include="DataManage\FactoryDBServerData\DBConn\Table\OneFiled.h" />
+    <ClInclude Include="DataManage\FactoryDBServerData\DBDataParse\Markup.h" />
+    <ClInclude Include="DataManage\FactoryDBServerData\FactoryDBServerData.h" />
+    <ClInclude Include="DataManage\FactoryDBServerData\WebService\WebService.h" />
+    <ClInclude Include="DataManage\ReturnFile\ReturnFile.h" />
+    <ClInclude Include="FactoryConfigDlg.h" />
+    <ClInclude Include="StartRun\IFCPBuffer.h" />
+    <ClInclude Include="LoginInfo.h" />
+    <ClInclude Include="MesDBTypeInfoDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="StartRun\APLock\APLock.h" />
+    <ClInclude Include="StartRun\APSemaphore\APSemaphore.h" />
+    <ClInclude Include="StartRun\CommandData.h" />
+    <ClInclude Include="StartRun\LedStatus.h" />
+    <ClInclude Include="StartRun\ListenConnInterface.h" />
+    <ClInclude Include="StartRun\ListenNetwork.h" />
+    <ClInclude Include="StartRun\ListenUart.h" />
+    <ClInclude Include="StartRun\SerialBuf.h" />
+    <ClInclude Include="StartRun\ThreadRun\ThreadRun.h" />
+    <ClInclude Include="StartRun\TransportProtocol\TransportProtocol.h" />
+    <ClInclude Include="StartRun\Upgrade.h" />
+    <ClInclude Include="StartRun\UpgradeCommand.h" />
+    <ClInclude Include="StartRun\UpgradeMode.h" />
+    <ClInclude Include="StartRun\UpgradeMsg.h" />
+    <ClInclude Include="StartRun\UpgradeSTB.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="ToolVersion\ToolVersion.h" />
+    <ClInclude Include="UICommon.h" />
+    <ClInclude Include="UpgradeTool.h" />
+    <ClInclude Include="UpgradeToolDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CommunicateMessageShow.cpp" />
+    <ClCompile Include="Communication\Common\UpgradeCommon.cpp" />
+    <ClCompile Include="Communication\DataClient.cpp" />
+    <ClCompile Include="Communication\Network\NetClient.cpp" />
+    <ClCompile Include="Communication\Network\NetServer.cpp" />
+    <ClCompile Include="Communication\Network\Network.cpp" />
+    <ClCompile Include="Communication\Network\OneClient.cpp" />
+    <ClCompile Include="Communication\Serial\Serial.cpp" />
+    <ClCompile Include="Communication\STBConnInterface.cpp" />
+    <ClCompile Include="ConaxPersonalizeDlg.cpp" />
+    <ClCompile Include="DataManage\CastpalLocalData\PEF.cpp" />
+    <ClCompile Include="DataManage\CastpalServerData\CastpalServerData.cpp" />
+    <ClCompile Include="DataManage\CastpalServerData\HDCP.cpp" />
+    <ClCompile Include="DataManage\CastpalServerData\MAC.cpp" />
+    <ClCompile Include="DataManage\CastpalServerData\SN.cpp" />
+    <ClCompile Include="DataManage\ConaxPersonalize\ConaxPersonalize.cpp" />
+    <ClCompile Include="DataManage\ConaxPersonalize\HttpClient\DebugLog.cpp" />
+    <ClCompile Include="DataManage\ConaxPersonalize\HttpClient\HttpClient.cpp" />
+    <ClCompile Include="DataManage\ConaxPersonalize\JobFileManage.cpp" />
+    <ClCompile Include="DataManage\ConfigData\NodeList.cpp" />
+    <ClCompile Include="DataManage\ConfigData\ParseConfig.cpp" />
+    <ClCompile Include="DataManage\ConfigData\XMLNode.cpp" />
+    <ClCompile Include="DataManage\DataManage.cpp" />
+    <ClCompile Include="DataManage\FactoryDBServerData\DBConn\DBConn.cpp" />
+    <ClCompile Include="DataManage\FactoryDBServerData\DBConn\DBTableString.cpp" />
+    <ClCompile Include="DataManage\FactoryDBServerData\DBConn\Table\InsertTable.cpp" />
+    <ClCompile Include="DataManage\FactoryDBServerData\DBConn\Table\OneFiled.cpp" />
+    <ClCompile Include="DataManage\FactoryDBServerData\DBDataParse\Markup.cpp" />
+    <ClCompile Include="DataManage\FactoryDBServerData\FactoryDBServerData.cpp" />
+    <ClCompile Include="DataManage\FactoryDBServerData\WebService\WebService.cpp" />
+    <ClCompile Include="DataManage\ReturnFile\ReturnFile.cpp" />
+    <ClCompile Include="FactoryConfigDlg.cpp" />
+    <ClCompile Include="LoginInfo.cpp" />
+    <ClCompile Include="MesDBTypeInfoDlg.cpp" />
+    <ClCompile Include="StartRun\APLock\APLock.cpp" />
+    <ClCompile Include="StartRun\APSemaphore\APSemaphore.cpp" />
+    <ClCompile Include="StartRun\IFCPBuffer.cpp" />
+    <ClCompile Include="StartRun\ListenConnInterface.cpp" />
+    <ClCompile Include="StartRun\ListenNetwork.cpp" />
+    <ClCompile Include="StartRun\ListenUart.cpp" />
+    <ClCompile Include="StartRun\SerialBuf.cpp" />
+    <ClCompile Include="StartRun\ThreadRun\ThreadRun.cpp" />
+    <ClCompile Include="StartRun\TransportProtocol\TransportProtocol.cpp" />
+    <ClCompile Include="StartRun\Upgrade.cpp" />
+    <ClCompile Include="StartRun\UpgradeSTB.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ToolVersion\ToolVersion.cpp" />
+    <ClCompile Include="UICommon.cpp" />
+    <ClCompile Include="UpgradeTool.cpp" />
+    <ClCompile Include="UpgradeToolDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UpgradeTool.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UpgradeTool.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\UpgradeTool.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="UpgradeTool.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

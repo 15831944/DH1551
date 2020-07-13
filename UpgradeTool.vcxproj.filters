@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Dialog">
+      <UniqueIdentifier>{8cd148ec-f6d5-46f1-9e8a-f8b3583e31ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage">
+      <UniqueIdentifier>{9dacb453-1212-4717-b251-d5663346273b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Communication">
+      <UniqueIdentifier>{1cdeb4e4-9d1b-46b5-ac8a-c84224c8ab81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Communication\Network">
+      <UniqueIdentifier>{b4d87561-05e8-40c1-b482-335d3afc9ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Communication\Serial">
+      <UniqueIdentifier>{60a15eee-2579-4ac4-85d0-572054183390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\StartRun">
+      <UniqueIdentifier>{6e90aec5-d536-4dd0-94a9-b6015d82e628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Communication\Common">
+      <UniqueIdentifier>{5ab9327b-d870-4725-a4c5-7690f81df2c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\CastpalLocalData">
+      <UniqueIdentifier>{51e3296d-90b6-456b-9b1e-7df74f64254d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\CastpalServerData">
+      <UniqueIdentifier>{ec3a0712-b1a9-4658-ac95-60590c38094d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\FactoryDBServerData">
+      <UniqueIdentifier>{8f6b9d2a-bdc9-451d-b83f-d2dde5c39f5d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\ReturnFile">
+      <UniqueIdentifier>{31220e49-9dc8-45f9-839f-c365ecf9c9ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\ConfigData">
+      <UniqueIdentifier>{fe7e179f-91e5-4567-9bc4-9ff3b0b49952}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ToolVersion">
+      <UniqueIdentifier>{0bf5a59b-d9f5-4d22-b435-707875fed455}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\FactoryDBServerData\WebService">
+      <UniqueIdentifier>{6ba3adbb-a1ab-45c5-b1bc-b0fac1f55542}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\FactoryDBServerData\DBConn">
+      <UniqueIdentifier>{d462ce97-648a-4b03-9263-e04d741c23f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\FactoryDBServerData\DBDataParse">
+      <UniqueIdentifier>{46a51f6a-2beb-4ce4-b96a-64e9b7c6ed91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\FactoryDBServerData\DBConn\Table">
+      <UniqueIdentifier>{6d4eb01e-8a94-4c06-8fcc-aed8085deee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\ConaxPersonalize">
+      <UniqueIdentifier>{3cbf46d3-94b2-4b34-bd95-cdafe023caab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataManage\ConaxPersonalize\HttpClient">
+      <UniqueIdentifier>{f69f4957-4d21-4d18-a5d4-ee4be92cc946}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UpgradeTool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UpgradeToolDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\DataManage.h">
+      <Filter>源文件\DataManage</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication\Serial\Serial.h">
+      <Filter>源文件\Communication\Serial</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\Upgrade.h">
+      <Filter>源文件\StartRun</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\SerialBuf.h">
+      <Filter>源文件\StartRun</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\UpgradeCommand.h">
+      <Filter>源文件\StartRun</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\UpgradeMode.h">
+      <Filter>源文件\StartRun</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\UpgradeMsg.h">
+      <Filter>源文件\StartRun</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication\Network\Network.h">
+      <Filter>源文件\Communication\Network</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication\Common\UpgradeCommon.h">
+      <Filter>源文件\Communication\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\CastpalLocalData\PEF.h">
+      <Filter>源文件\DataManage\CastpalLocalData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\CastpalServerData\CastpalServerData.h">
+      <Filter>源文件\DataManage\CastpalServerData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\CastpalServerData\HDCP.h">
+      <Filter>源文件\DataManage\CastpalServerData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\CastpalServerData\MAC.h">
+      <Filter>源文件\DataManage\CastpalServerData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\CastpalServerData\SN.h">
+      <Filter>源文件\DataManage\CastpalServerData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\FactoryDBServerData\FactoryDBServerData.h">
+      <Filter>源文件\DataManage\FactoryDBServerData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\ReturnFile\ReturnFile.h">
+      <Filter>源文件\DataManage\ReturnFile</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication\STBConnInterface.h">
+      <Filter>源文件\Communication</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolVersion\ToolVersion.h">
+      <Filter>源文件\ToolVersion</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\ConfigData\ConfigData.h">
+      <Filter>源文件\DataManage\ConfigData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\ConfigData\ParseConfig.h">
+      <Filter>源文件\DataManage\ConfigData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\ConfigData\NodeList.h">
+      <Filter>源文件\DataManage\ConfigData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\ConfigData\XMLNode.h">
+      <Filter>源文件\DataManage\ConfigData</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\FactoryDBServerData\WebService\WebService.h">
+      <Filter>源文件\DataManage\FactoryDBServerData\WebService</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\FactoryDBServerData\DBDataParse\Markup.h">
+      <Filter>源文件\DataManage\FactoryDBServerData\DBDataParse</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\FactoryDBServerData\DBConn\DBConn.h">
+      <Filter>源文件\DataManage\FactoryDBServerData\DBConn</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\FactoryDBServerData\DBConn\DBTableString.h">
+      <Filter>源文件\DataManage\FactoryDBServerData\DBConn</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\FactoryDBServerData\DBConn\Table\InsertTable.h">
+      <Filter>源文件\DataManage\FactoryDBServerData\DBConn\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\FactoryDBServerData\DBConn\Table\OneFiled.h">
+      <Filter>源文件\DataManage\FactoryDBServerData\DBConn\Table</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\ConaxPersonalize\ConaxPersonalize.h">
+      <Filter>源文件\DataManage\ConaxPersonalize</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\ConaxPersonalize\HttpClient\DebugLog.h">
+      <Filter>源文件\DataManage\ConaxPersonalize\HttpClient</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\ConaxPersonalize\HttpClient\HttpClient.h">
+      <Filter>源文件\DataManage\ConaxPersonalize\HttpClient</Filter>
+    </ClInclude>
+    <ClInclude Include="UICommon.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CommunicateMessageShow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\APLock\APLock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\APSemaphore\APSemaphore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\ThreadRun\ThreadRun.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\TransportProtocol\TransportProtocol.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\CommandData.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\ListenUart.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\UpgradeSTB.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\LedStatus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DataManage\ConaxPersonalize\JobFileManage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\ListenNetwork.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication\DataClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication\Network\NetClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication\Network\NetServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Communication\Network\OneClient.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\ListenConnInterface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ConaxPersonalizeDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FactoryConfigDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MesDBTypeInfoDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="StartRun\IFCPBuffer.h">
+      <Filter>源文件\StartRun</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="UpgradeTool.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="UpgradeToolDlg.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\DataManage.cpp">
+      <Filter>源文件\DataManage</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication\Serial\Serial.cpp">
+      <Filter>源文件\Communication\Serial</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\Upgrade.cpp">
+      <Filter>源文件\StartRun</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\SerialBuf.cpp">
+      <Filter>源文件\StartRun</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication\Network\Network.cpp">
+      <Filter>源文件\Communication\Network</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication\Common\UpgradeCommon.cpp">
+      <Filter>源文件\Communication\Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\CastpalLocalData\PEF.cpp">
+      <Filter>源文件\DataManage\CastpalLocalData</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\CastpalServerData\CastpalServerData.cpp">
+      <Filter>源文件\DataManage\CastpalServerData</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\CastpalServerData\HDCP.cpp">
+      <Filter>源文件\DataManage\CastpalServerData</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\CastpalServerData\MAC.cpp">
+      <Filter>源文件\DataManage\CastpalServerData</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\CastpalServerData\SN.cpp">
+      <Filter>源文件\DataManage\CastpalServerData</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\FactoryDBServerData\FactoryDBServerData.cpp">
+      <Filter>源文件\DataManage\FactoryDBServerData</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\ReturnFile\ReturnFile.cpp">
+      <Filter>源文件\DataManage\ReturnFile</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication\STBConnInterface.cpp">
+      <Filter>源文件\Communication</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolVersion\ToolVersion.cpp">
+      <Filter>源文件\ToolVersion</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\ConfigData\ParseConfig.cpp">
+      <Filter>源文件\DataManage\ConfigData</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\ConfigData\NodeList.cpp">
+      <Filter>源文件\DataManage\ConfigData</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\ConfigData\XMLNode.cpp">
+      <Filter>源文件\DataManage\ConfigData</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\FactoryDBServerData\WebService\WebService.cpp">
+      <Filter>源文件\DataManage\FactoryDBServerData\WebService</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\FactoryDBServerData\DBDataParse\Markup.cpp">
+      <Filter>源文件\DataManage\FactoryDBServerData\DBDataParse</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\FactoryDBServerData\DBConn\DBConn.cpp">
+      <Filter>源文件\DataManage\FactoryDBServerData\DBConn</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\FactoryDBServerData\DBConn\DBTableString.cpp">
+      <Filter>源文件\DataManage\FactoryDBServerData\DBConn</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\FactoryDBServerData\DBConn\Table\InsertTable.cpp">
+      <Filter>源文件\DataManage\FactoryDBServerData\DBConn\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\FactoryDBServerData\DBConn\Table\OneFiled.cpp">
+      <Filter>源文件\DataManage\FactoryDBServerData\DBConn\Table</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\ConaxPersonalize\ConaxPersonalize.cpp">
+      <Filter>源文件\DataManage\ConaxPersonalize</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\ConaxPersonalize\HttpClient\DebugLog.cpp">
+      <Filter>源文件\DataManage\ConaxPersonalize\HttpClient</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\ConaxPersonalize\HttpClient\HttpClient.cpp">
+      <Filter>源文件\DataManage\ConaxPersonalize\HttpClient</Filter>
+    </ClCompile>
+    <ClCompile Include="UICommon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CommunicateMessageShow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\APLock\APLock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\APSemaphore\APSemaphore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\ThreadRun\ThreadRun.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\TransportProtocol\TransportProtocol.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\ListenUart.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\UpgradeSTB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DataManage\ConaxPersonalize\JobFileManage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\ListenNetwork.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication\DataClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication\Network\NetClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication\Network\NetServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Communication\Network\OneClient.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\ListenConnInterface.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ConaxPersonalizeDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryConfigDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MesDBTypeInfoDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="StartRun\IFCPBuffer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="UpgradeTool.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\UpgradeTool.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\UpgradeTool.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
